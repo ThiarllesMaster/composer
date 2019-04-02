@@ -1,0 +1,14 @@
+ID: composer
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: upoem
+   type: java
+   path: upoem
+   parameters:
+      memory: 512M
+   provides:
+    - name: upoem_api
+      properties:
+         url: ${default-url}
